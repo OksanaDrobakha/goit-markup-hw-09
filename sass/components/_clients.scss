@@ -1,0 +1,106 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include tablet {
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+  }
+  @include desktop {
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.client__block {
+  max-width: 448px;
+  flex-basis: calc((100% - 30px) / 2);
+
+  @include tablet {
+    max-width: 720px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    max-width: 1200px;
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
+
+// .client__block:not(:first-child) {
+//   margin-left: 30px;
+// }
+
+.client__link {
+  display: flex;
+  background-color: var(--background-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client__link:hover,
+.client__link:focus {
+  border-color: var(--accent-color);
+  .client__icon,
+  .client__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.client__icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client__yaco {
+  width: 41px;
+  height: 46.7px;
+}
+
+.client__company {
+  width: 40px;
+  height: 52px;
+}
+
+.client__round {
+  width: 43px;
+  height: 41px;
+}
+
+.client__foster {
+  width: 84px;
+  height: 41px;
+}
+
+.client__brand {
+  width: 63px;
+  height: 45px;
+}
+
+.client__tag {
+  width: 94px;
+  height: 44px;
+}

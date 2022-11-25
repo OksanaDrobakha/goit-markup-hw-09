@@ -1,0 +1,32 @@
+.images {
+  display: flex;
+  gap: 30px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 720px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.container__images {
+  @include desktop {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 47px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
